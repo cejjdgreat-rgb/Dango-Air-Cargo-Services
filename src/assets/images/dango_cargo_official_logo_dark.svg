@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <!-- Cardboard Box Gradients -->
+    <linearGradient id="boxFrontDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D8A977" />
+      <stop offset="100%" stop-color="#BE8954" />
+    </linearGradient>
+    <linearGradient id="boxTopDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EED0A6" />
+      <stop offset="100%" stop-color="#DDB383" />
+    </linearGradient>
+    <linearGradient id="boxSideDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A57342" />
+      <stop offset="100%" stop-color="#8F5F32" />
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== EMBLEM (GLOBE + AIRPLANE + CARGO BOXES) ==================== -->
+  <g transform="translate(8, 6)">
+    
+    <!-- Deep Purple Globe Base with Gold Glow border for dark surfaces -->
+    <circle cx="58" cy="54" r="44" fill="#3B0764" stroke="#F59E0B" stroke-width="2" />
+
+    <!-- Stylized Continents on Globe (Africa & Atlantic) -->
+    <path d="M50 20 C62 18 72 26 76 34 C80 44 74 56 68 64 C62 72 64 84 60 92 C54 88 50 76 52 64 C46 58 42 46 46 32 Z" fill="#581C87" opacity="0.9" />
+    <path d="M26 36 C34 32 38 42 36 50 C32 60 26 66 22 56 C18 46 20 40 26 36 Z" fill="#581C87" opacity="0.8" />
+
+    <!-- White Latitude Grid Lines -->
+    <ellipse cx="58" cy="54" rx="44" ry="18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.85" />
+    <ellipse cx="58" cy="54" rx="44" ry="34" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.5" />
+    <line x1="14" y1="54" x2="102" y2="54" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.85" />
+
+    <!-- White Longitude Grid Lines -->
+    <ellipse cx="58" cy="54" rx="20" ry="44" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.85" />
+    <ellipse cx="58" cy="54" rx="34" ry="44" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.6" />
+    <line x1="58" y1="10" x2="58" y2="98" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.85" />
+
+    <!-- Orbital Swooshes at Bottom Left -->
+    <path d="M12 78 C 16 96, 52 108, 92 88" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M8 86 C 14 104, 52 116, 96 94" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" />
+    <path d="M6 90 C 14 110, 56 120, 102 96" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Soaring Commercial Jet Silhouette (Flying Up-Right at ~40deg) -->
+    <g transform="translate(68, 42) rotate(-38)">
+      <path d="M -8 0 L 28 3 L 34 6 L 28 9 L -8 12 L -18 16 L -16 6 L -18 -4 Z" fill="#F8FAFC" opacity="0.3" transform="scale(1.15) translate(-2, -1)" />
+      
+      <!-- Main Fuselage -->
+      <path d="M -16 5 C -8 3, 16 3, 30 5 C 34 5.5, 36 6, 30 6.5 C 16 8.5, -8 8.5, -16 6.5 Z" fill="#FFFFFF" />
+      
+      <!-- Left Main Swept Wing with Engines -->
+      <path d="M 4 5 L -10 -22 L -4 -22 L 14 5 Z" fill="#FFFFFF" />
+      <rect x="-4" y="-12" width="6" height="3" rx="1.5" fill="#E2E8F0" transform="rotate(-10)" />
+      <rect x="2" y="-5" width="6" height="3" rx="1.5" fill="#E2E8F0" transform="rotate(-10)" />
+
+      <!-- Right Main Swept Wing with Engines -->
+      <path d="M 6 6.5 L -6 32 L 0 32 L 16 6.5 Z" fill="#FFFFFF" />
+      <rect x="-1" y="16" width="6" height="3" rx="1.5" fill="#E2E8F0" transform="rotate(10)" />
+      <rect x="5" y="8" width="6" height="3" rx="1.5" fill="#E2E8F0" transform="rotate(10)" />
+
+      <!-- Tail Stabilizers (T-Tail / Empennage) -->
+      <path d="M -14 5.5 L -26 -6 L -21 -6 L -11 5.5 Z" fill="#FFFFFF" />
+      <path d="M -14 6.5 L -24 16 L -20 16 L -11 6.5 Z" fill="#FFFFFF" />
+      <path d="M -12 6 L -22 6 L -20 0 L -10 3 Z" fill="#CBD5E1" />
+    </g>
+
+    <!-- 3D Stack of Cardboard Cargo Boxes (Pyramid Stack at Bottom-Right of Globe) -->
+    <g transform="translate(68, 44)">
+      
+      <!-- Box 1 (Bottom Left) -->
+      <g transform="translate(0, 36)">
+        <polygon points="0,6 14,0 28,6 14,12" fill="url(#boxTopDark)" />
+        <polygon points="0,6 14,12 14,28 0,22" fill="url(#boxFrontDark)" />
+        <polygon points="14,12 28,6 28,22 14,28" fill="url(#boxSideDark)" />
+        <line x1="7" y1="9" x2="7" y2="25" stroke="#784218" stroke-width="1.2" />
+        <line x1="21" y1="9" x2="21" y2="25" stroke="#683612" stroke-width="1.2" />
+      </g>
+
+      <!-- Box 2 (Bottom Middle/Right) -->
+      <g transform="translate(16, 38)">
+        <polygon points="0,6 16,0 32,6 16,12" fill="url(#boxTopDark)" />
+        <polygon points="0,6 16,12 16,30 0,24" fill="url(#boxFrontDark)" />
+        <polygon points="16,12 32,6 32,24 16,30" fill="url(#boxSideDark)" />
+        <line x1="8" y1="9" x2="8" y2="27" stroke="#784218" stroke-width="1.2" />
+        <line x1="24" y1="9" x2="24" y2="27" stroke="#683612" stroke-width="1.2" />
+      </g>
+
+      <!-- Box 3 (Middle Layer Left) -->
+      <g transform="translate(6, 20)">
+        <polygon points="0,5 13,0 26,5 13,10" fill="url(#boxTopDark)" />
+        <polygon points="0,5 13,10 13,24 0,19" fill="url(#boxFrontDark)" />
+        <polygon points="13,10 26,5 26,19 13,24" fill="url(#boxSideDark)" />
+        <line x1="6.5" y1="7.5" x2="6.5" y2="21.5" stroke="#784218" stroke-width="1.2" />
+      </g>
+
+      <!-- Box 4 (Middle Layer Right) -->
+      <g transform="translate(20, 22)">
+        <polygon points="0,5 13,0 26,5 13,10" fill="url(#boxTopDark)" />
+        <polygon points="0,5 13,10 13,24 0,19" fill="url(#boxFrontDark)" />
+        <polygon points="13,10 26,5 26,19 13,24" fill="url(#boxSideDark)" />
+        <line x1="6.5" y1="7.5" x2="6.5" y2="21.5" stroke="#784218" stroke-width="1.2" />
+      </g>
+
+      <!-- Box 5 (Top Apex Box) -->
+      <g transform="translate(13, 6)">
+        <polygon points="0,4 11,0 22,4 11,8" fill="url(#boxTopDark)" />
+        <polygon points="0,4 11,8 11,20 0,16" fill="url(#boxFrontDark)" />
+        <polygon points="11,8 22,4 22,16 11,20" fill="url(#boxSideDark)" />
+        <line x1="5.5" y1="6" x2="5.5" y2="18" stroke="#784218" stroke-width="1" />
+      </g>
+
+    </g>
+
+  </g>
+
+  <!-- ==================== OFFICIAL BRAND TYPOGRAPHY ==================== -->
+  <g id="brand-typography-dark">
+    <!-- Top Line: DANGO CARGO (Heavy Grotesque / Sans-Serif) -->
+    <text 
+      x="142" 
+      y="54" 
+      font-family="'Plus Jakarta Sans', 'Arial Black', 'Helvetica Black', 'Impact', sans-serif" 
+      font-size="46" 
+      font-weight="900" 
+      letter-spacing="-0.01em" 
+      fill="#FFFFFF"
+    >
+      DANGO CARGO
+    </text>
+
+    <!-- Bottom Line: AIR SERVICES (High-Contrast Roman Serif) -->
+    <text 
+      x="144" 
+      y="92" 
+      font-family="'Outfit', 'Times New Roman', 'Times', 'Georgia', serif" 
+      font-size="28" 
+      font-weight="700" 
+      letter-spacing="0.14em" 
+      fill="#E2E8F0"
+    >
+      AIR SERVICES
+    </text>
+
+    <!-- Official Horizontal Terminal Accent Line trailing after SERVICES -->
+    <line 
+      x1="454" 
+      y1="85" 
+      x2="504" 
+      y2="85" 
+      stroke="#F59E0B" 
+      stroke-width="3" 
+      stroke-linecap="square" 
+    />
+  </g>
+</svg>

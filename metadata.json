@@ -1,0 +1,6 @@
+{
+  "name": "DANGO CARGO AIR SERVICES",
+  "description": "Safe, fast, and reliable air cargo, freight forwarding, and international logistics connecting Nigeria, the Democratic Republic of Congo (DRC), and global destinations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
